@@ -33,7 +33,7 @@ CREATE EXTERNAL TABLE ext_effective_care_national(
 	measure_name STRING,
 	measure_id STRING,
 	condition STRING,
-	category STRING
+	category STRING,
 	score STRING,
 	footnote STRING,
 	measure_start_date date,
@@ -52,14 +52,14 @@ LOCATION '/user/w205/hospital_compare/effective_care_national';
 
 DROP TABLE ext_effective_care_state;
 CREATE EXTERNAL TABLE ext_effective_care_state(
-	state,
-	condition,
-	measure_name,
-	measure_id,
-	score,
-	footnote,
-	measure_start_date,
-	measure_end_date
+	state STRING,
+	condition STRING,
+	measure_name STRING,
+	measure_id STRING,
+	score STRING,
+	footnote STRING,
+	measure_start_date STRING,
+	measure_end_date STRING
 )
 ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 WITH SERDEPROPERTIES (
@@ -111,9 +111,9 @@ DROP TABLE ext_hospitals;
 CREATE EXTERNAL TABLE ext_hospitals(
 	provider_id STRING,
 	hospital_name STRING,
-	address, STRING,
-	city, STRING,
-	state, STRING,
+	address STRING,
+	city STRING,
+	state STRING,
 	zip_code STRING,
 	county STRING,
 	phone STRING,
