@@ -8,6 +8,11 @@ These are the five procedures showing the highest variability across hospitals:
 | AMI_7a     | Fibrinolytic Therapy Received within 30 Minutes of Hospital Arrival | 50.00     | 18.78    | 2.45        |
 | OP_2       | Fibrinolytic Therapy Received Within 30 Minutes of ED Arrival       | 70.25     | 18.05    | 4.04        |
 | VTE_5      | Venous Thromboembolism Warfarin Therapy Discharge Instructions      | 88.88     | 16.30    | 6.13        |
+| VTE_1      | Venous Thromboembolism Prophylaxis                                  | 89.11     | 15.26    | 6.55        |
+| STK_8      | Stroke Education                                                    | 90.54     | 14.01    | 7.14        |
+| CAC_3      | Home Management Plan of Care Document Given to Patient/Caregiver    | 89.38     | 12.72    | 5.19        |
+| IMM_2      | Influenza Immunization                                              | 91.75     | 11.94    | 8.37        |
+| HF_1       | Discharge Instructions                                              | 93.61     | 11.83    | 8.45        |
 +=======================================================================================================================+
 
 Procedures are ordered by the size of their standard deviations. Unlike some of the other queries, I cut out all of the “reversed” scores here, which are primarily wait times and likelihood of readmission. These did not seem to fit the definition of “procedures”. Because of this I also used the actual percentage scores, rather than the standardized scores, because the scores are all on the same scale to begin with.

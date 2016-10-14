@@ -4,5 +4,5 @@ SELECT p.state, COUNT(DISTINCT p.provider_id),
 FROM Providers p
     INNER JOIN Scores s ON s.provider_id = p.provider_id
 GROUP BY p.state
-ORDER BY SUM(CAST(s.std_score > 0 AS INT))/COUNT(s.std_score) DESC
-LIMIT 5;
+ORDER BY AVG(s.std_score) DESC
+LIMIT 10;

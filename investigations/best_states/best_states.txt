@@ -1,4 +1,4 @@
-The following five states demonstrate the best average standard of care:
+The following ten states demonstrate the best average standard of care:
 
 +===================================================================+
 | State | # Hosp. | Avg Score | % Above Avg | Min Score | Max Score |
@@ -8,6 +8,11 @@ The following five states demonstrate the best average standard of care:
 | ME    | 35      | 0.24      | 73%         | -2.80     | 2.72      |
 | WI    | 127     | 0.23      | 74%         | -5.45     | 3.18      |
 | SD    | 54      | 0.20      | 70%         | -6.60     | 3.19      |
+| NH    | 26      | 0.18      | 70%         | -4.23     | 2.42      |
+| ID    | 42      | 0.14      | 72%         | -21.88    | 2.73      |
+| MT    | 58      | 0.13      | 68%         | -8.53     | 2.72      |
+| NE    | 90      | 0.13      | 66%         | -6.99     | 3.82      |
+| HI    | 18      | 0.12      | 68%         | -12.16    | 2.29      |
 +===================================================================+
 
 The overall averages were calculated from the same standardized scores described in best_hospitals.txt. Since whole states had a large number of hospitals and scores, unavailable scores were simply left out, rather than treated as average (0).
