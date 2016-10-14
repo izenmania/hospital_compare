@@ -12,3 +12,13 @@ FROM Providers p
     LEFT JOIN SurveyResults s ON s.provider_id = p.provider_id
 ORDER BY avg_scores.avg_score DESC
 LIMIT 10;
+
+
+SELECT p.provider_id, FIRST(p.hospital_name), avg(s.std_score)
+
+FROM Providers p
+    INNER JOIN Scores s ON s.provider_id = p.provider_id
+    LEFT JOIN SurveyResults sr ON s.provider_id = p.provider_id
+GROUP BY p.provider_id
+ORDER BY avg(s.std_score) DESC
+LIMIT 10;

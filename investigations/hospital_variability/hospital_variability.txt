@@ -1,0 +1,15 @@
+These are the five procedures showing the highest variability across hospitals:
+
++=======================================================================================================================+
+| Measure ID | Measure Name                                                        | Score Avg | Score SD | Score Range |
++=======================================================================================================================+
+| STK_4      | Thrombolytic Therapy                                                | 82.90     | 21.95    | 4.55        |
+| OP_23      | Head CT Scan Results … Within 45 Minutes of ED Arrival              | 66.71     | 21.84    | 4.58        |
+| AMI_7a     | Fibrinolytic Therapy Received within 30 Minutes of Hospital Arrival | 50.00     | 18.78    | 2.45        |
+| OP_2       | Fibrinolytic Therapy Received Within 30 Minutes of ED Arrival       | 70.25     | 18.05    | 4.04        |
+| VTE_5      | Venous Thromboembolism Warfarin Therapy Discharge Instructions      | 88.88     | 16.30    | 6.13        |
++=======================================================================================================================+
+
+Procedures are ordered by the size of their standard deviations. Unlike some of the other queries, I cut out all of the “reversed” scores here, which are primarily wait times and likelihood of readmission. These did not seem to fit the definition of “procedures”. Because of this I also used the actual percentage scores, rather than the standardized scores, because the scores are all on the same scale to begin with.
+
+One interesting factor of note is that among the top five, as well as looking deeper into the top 20, many of the most variable procedures are related to treatment of blood clots. Not necessarily with the same original condition - AMI_7a involves blood clots in heart attack patients, while STK_4 is for ischemic stroke patients, for example - but it seems that more standardized training on the dangers of blood clots may be beneficial to reduce this variability.

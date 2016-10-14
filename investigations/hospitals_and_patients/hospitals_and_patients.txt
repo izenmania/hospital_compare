@@ -1,0 +1,11 @@
+These results show the correlation of patient survey results with both average measure score, and measure variance:
+
++=================================+
+| Survey vs. Avg | Survey vs. Var |
++=================================+
+| 0.32           | -0.18          |
++=================================+
+
+Methodology was fairly simple here. All scores were grouped by provider ID, to retrieve the average and standard deviation of the std_score field, and then these scores were compared using CORR with the hospital_overall result in the patient surveys.
+
+The results are not particularly surprising. There is a medium-strength (0.32) correlation between survey results and the average score of the hospital, demonstrating that, to some degree, good measure performance is also perceived as good care by patients. There is also a small negative correlation (-0.18) of survey scores with score variability, indicating and patients generally have more negative feelings about inconsistent standards of care.

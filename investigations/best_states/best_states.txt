@@ -1,0 +1,15 @@
+The following five states demonstrate the best average standard of care:
+
++===================================================================+
+| State | # Hosp. | Avg Score | % Above Avg | Min Score | Max Score |
++===================================================================+
+| UT    | 46      | 0.26      | 76%         | -6.51     | 3.92      |
+| CO    | 79      | 0.24      | 75%         | -7.66     | 2.75      |
+| ME    | 35      | 0.24      | 73%         | -2.80     | 2.72      |
+| WI    | 127     | 0.23      | 74%         | -5.45     | 3.18      |
+| SD    | 54      | 0.20      | 70%         | -6.60     | 3.19      |
++===================================================================+
+
+The overall averages were calculated from the same standardized scores described in best_hospitals.txt. Since whole states had a large number of hospitals and scores, unavailable scores were simply left out, rather than treated as average (0).
+
+An alternative query ordering on % Above Avg - the percentage of standardized scores for a given state that are above the average of 0 - retained the same top four, slightly reordered - UT, CO, WI, ME - and ranked Idaho fifth (Idaho ranked 8th by avg, while SD ranked 6th by % above average). This indicates that the highest ranking averages were not a result of a few strong outliers, but of consistent quality.

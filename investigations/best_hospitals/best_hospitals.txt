@@ -1,0 +1,22 @@
+Question: What hospitals are models of high-quality care? That is, which hospitals have the most consistently high scores for a variety of procedures.
+
+The following are the top ten ranked hospitals, according to my scoring method:
+
++===================================================================================================================+
+| RANK | ID	| HOSPITAL NAME                          | Adj Score | Avg Score | Min Score | Max Score | # Scores |
++===================================================================================================================+
+| 1    | 420087 | ROPER HOSPITAL                         | 0.63      | 0.68      | -1.64     | 2.52      | 48       |
+| 2    | 130006 | ST LUKE'S REGIONAL MEDICAL CENTER      | 0.60      | 0.64      | -1.73     | 2.52      | 49       |
+| 3    | 260006	| HEARTLAND REGIONAL MEDICAL CENTER      | 0.54      | 0.60      | -1.00     | 1.87      | 47       |
+| 4    | 330214	| NYU HOSPITALS CENTER                   | 0.54      | 0.57      | -1.11     | 3.16      | 49       |
+| 5    | 390057	| GRAND VIEW HOSPITAL                    | 0.53      | 0.63      | -0.30     | 2.74      | 44       |
+| 6    | 390138	| WAYNESBORO HOSPITAL                    | 0.53      | 0.66      | -0.20     | 2.03      | 42       |
+| 7    | 230072	| HOLLAND COMMUNITY HOSPITAL             | 0.51      | 0.57      | -2.16     | 2.29      | 47       |
+| 8    | 050424	| SCRIPPS GREEN HOSPITAL                 | 0.51      | 0.70      | -0.66     | 2.76      | 38       |
+| 9    | 420065	| BON SECOURS-ST FRANCIS XAVIER HOSPITAL | 0.51      | 0.66      | -0.03     | 2.40      | 40       |
+| 10   | 050232	| FRENCH HOSPITAL MEDICAL CENTER         | 0.51      | 0.60      | -0.21     | 2.98      | 44       |
++===================================================================================================================+
+
+Scores are based on measures from the Timely & Effective Care and Readmissions data sets. Scores were standardized to account for two problems (1) some scores were in percentages, while others were time (measured in minutes); (2) some scores were “reversed” - measures for which a high score is bad, and a low score as good. To resolve the difference in units, all scores were converted to their number of standard deviations from the mean for that measure. Then the measures determined to be “reversed” were multiplied by -1. This list included all measures scored on time, all readmission and death rates, and a few others, based on a reading of their descriptions.
+
+Each hospital has an average score. However, when ranked based on this, several of the top ten had fewer than 10 total scores. Instead, hospitals are ranked on their adjusted score, which makes the assumption that any unavailable score would have been average - mathematically easy, because in these standardized scores, average is zero for all measures. This method penalizes hospitals which were high scoring but had insufficient data to reach a conclusion, but in general does not massively impact scores, as on average hospitals have over 50 scores each.
