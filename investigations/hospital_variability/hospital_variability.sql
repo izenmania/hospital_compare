@@ -5,4 +5,4 @@ FROM Measures m
 WHERE !m.reverse_score
 GROUP BY m.measure_id
 ORDER BY sd DESC
-LIMIT 5;
+LIMIT 10;

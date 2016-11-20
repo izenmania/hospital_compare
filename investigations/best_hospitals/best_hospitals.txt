@@ -1,5 +1,3 @@
-Question: What hospitals are models of high-quality care? That is, which hospitals have the most consistently high scores for a variety of procedures.
-
 The following are the top ten ranked hospitals, according to my scoring method:
 
 +===================================================================================================================+
@@ -17,6 +15,6 @@ The following are the top ten ranked hospitals, according to my scoring method:
 | 10   | 050232	| FRENCH HOSPITAL MEDICAL CENTER         | 0.51      | 0.60      | -0.21     | 2.98      | 44       |
 +===================================================================================================================+
 
-Scores are based on measures from the Timely & Effective Care and Readmissions data sets. Scores were standardized to account for two problems (1) some scores were in percentages, while others were time (measured in minutes); (2) some scores were “reversed” - measures for which a high score is bad, and a low score as good. To resolve the difference in units, all scores were converted to their number of standard deviations from the mean for that measure. Then the measures determined to be “reversed” were multiplied by -1. This list included all measures scored on time, all readmission and death rates, and a few others, based on a reading of their descriptions.
+Scores are based on measures from the Timely & Effective Care and Readmissions data sets. Scores were standardized to account for two problems: (1) some scores were in percentages, while others were time (measured in minutes); (2) some scores were “reversed” - measures for which a high score is bad, and a low score as good. To resolve the difference in units, all scores were converted to their number of standard deviations from the mean for that measure. Then the measures determined to be reversed were multiplied by -1. This list included all measures scored on time, all readmission and death rates, and a few others, based on a reading of their descriptions.
 
 Each hospital has an average score. However, when ranked based on this, several of the top ten had fewer than 10 total scores. Instead, hospitals are ranked on their adjusted score, which makes the assumption that any unavailable score would have been average - mathematically easy, because in these standardized scores, average is zero for all measures. This method penalizes hospitals which were high scoring but had insufficient data to reach a conclusion, but in general does not massively impact scores, as on average hospitals have over 50 scores each.
